@@ -1,0 +1,94 @@
+/* Estilos generales para la página de reportes */
+.reportes-body {
+    display: flex; /* Para colocar la barra de navegación y el contenido uno al lado del otro */
+    background-color: #212121; /* Fondo específico para reportes */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white; /* Texto blanco por defecto */
+}
+
+/* Estilos para la barra de navegación */
+.barra-navegacion {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2c2c2c; /* Gris oscuro elegante */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #bfa15b; /* Detalle dorado */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.barra-navegacion a {
+    color: #bfa15b; /* Color dorado elegante */
+    text-decoration: none;
+    margin: 15px 0; /* Espacio vertical más equilibrado */
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px; /* Espaciado de letras sutil */
+    padding: 10px 15px; /* Más espacio para hacer el área clicable más amplia */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: all 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.barra-navegacion a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil en hover */
+    color: #f1c40f; /* Dorado más brillante en hover */
+    transform: translateX(10px); /* Movimiento suave a la derecha */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.barra-navegacion img.logo-banco {
+    max-width: 100%; /* Asegúrate de que el logo se ajuste bien */
+    margin-bottom: 20px; /* Espaciado inferior para el logo */
+}
+
+/* Contenedor principal de reportes */
+.contenedor-reportes {
+    flex-grow: 1; /* Para que el contenedor ocupe todo el espacio restante */
+    margin-left: 181px; /* Asegúrate de que la barra de navegación no interfiera */
+    padding: 255px; /* Ajuste de padding adecuado */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(115% - 250px); /* Ajusta el ancho menos la barra lateral */
+    background-size: cover; /* Asegúrate de que la imagen cubra todo el área */
+}
+
+/* Títulos de reportes */
+.contenedor-reportes h1 {
+    margin-bottom: 30px;
+    color: #bfa15b; /* Color dorado */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Estilo de cada reporte */
+.report-item {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+/* Hover sobre cada reporte */
+.report-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil en hover */
+}
+
+/* Títulos de cada sección */
+.report-item h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1a73e8; /* Azul para resaltar títulos */
+}

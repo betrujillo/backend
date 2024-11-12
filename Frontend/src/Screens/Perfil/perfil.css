@@ -1,0 +1,118 @@
+.perfil-body {
+    background-color: #212121;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-perfil {
+    flex-grow: 1;
+    margin-left: 181px;
+    padding: 255px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(115% - 250px);
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+.titulo-perfil {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.seccion-dinamica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.seccion-detalles-usuario, .seccion-saldo, .seccion-transacciones {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex: 1 1 45%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.seccion-saldo h2, .seccion-transacciones h2, .seccion-detalles-usuario h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.seccion-detalles-usuario {
+    font-size: 16px;
+    color: #000;
+}
+
+.seccion-detalles-usuario p {
+    color: #000;
+    margin: 5px 0;
+}
+
+.saldo-cuenta {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.lista-transacciones {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-transacciones li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.barra-navegacion {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2c2c2c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #bfa15b;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.barra-navegacion a {
+    color: #bfa15b;
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.barra-navegacion a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f1c40f;
+    transform: translateX(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.barra-navegacion a:active {
+    transform: translateX(5px);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
